@@ -1,11 +1,13 @@
 import React from "react";
 import {useDispatch} from 'react-redux';
 
-import add from "./addAction";
+import add from "./action/addAction";
 
 export default function AddButton(props) {
 
     const dispatch = useDispatch();
+
+
 
     const handleClick = () => {
         dispatch(add(props.value));
